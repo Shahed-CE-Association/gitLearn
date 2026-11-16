@@ -34,4 +34,4 @@ def modulus(a, b):
             raise ValueError("Error: Modulus by zero is not allowed!")
         return a % b
     except Exception as e:
-        return str(e)
+        return str(e) 
