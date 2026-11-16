@@ -21,4 +21,17 @@ def divide(a, b):
             raise ValueError("Error: Division by zero is not allowed!")
         return a / b
     except Exception as e:
-        return str(e)  
+        return str(e)
+
+def power(a, b):
+    """Raise base 'a' to the power of 'b'."""
+    return a ** b
+
+def modulus(a, b):
+    """Return the remainder of division."""
+    try:
+        if b == 0:
+            raise ValueError("Error: Modulus by zero is not allowed!")
+        return a % b
+    except Exception as e:
+        return str(e)
