@@ -39,48 +39,48 @@ def main():
 
         if choice in ['1', '2', '3', '4', '5', '6']:
             try:
-                n1 = float(input("Enter the first number: "))
-                n2 = float(input("Enter the second number: "))
+                number1 = float(input("Enter the first number: "))
+                number2 = float(input("Enter the second number: "))
             except ValueError:
                 print("❌ Invalid input! Please enter valid numbers.")
                 continue
 
             result = None
             if choice == '1':
-                result = add(n1, n2)
-                op_str = f"{n1} + {n2} = {result}"
+                result = add(number1, number2)
+                op_str = f"{number1} + {number2} = {result}"
             elif choice == '2':
-                result = subtract(n1, n2)
-                op_str = f"{n1} - {n2} = {result}"
+                result = subtract(number1, number2)
+                op_str = f"{number1} - {number2} = {result}"
             elif choice == '3':
-                result = multiply(n1, n2)
-                op_str = f"{n1} * {n2} = {result}"
+                result = multiply(number1, number2)
+                op_str = f"{number1} * {number2} = {result}"
             elif choice == '4':
-                result = divide(n1, n2)
-                op_str = f"{n1} / {n2} = {result}"
+                result = divide(number1, number2)
+                op_str = f"{number1} / {number2} = {result}"
             elif choice == '5':
-                result = power(n1, n2)
-                op_str = f"{n1} ^ {n2} = {result}"
+                result = power(number1, number2)
+                op_str = f"{number1} ^ {number2} = {result}"
             elif choice == '6':
-                result = modulus(n1, n2)
-                op_str = f"{n1} % {n2} = {result}"
+                result = modulus(number1, number2)
+                op_str = f"{number1} % {number2} = {result}"
 
             print(f"✅ Result: {result}")
             save_to_history(op_str)
 
         elif choice == '7':
             try:
-                n1 = float(input("Enter the number for square root: "))
+                number1 = float(input("Enter the number for square root: "))
             except ValueError:
                 print("❌ Invalid input! Please enter a valid number.")
                 continue
 
-            result = square_root(n1)
-            op_str = f"sqrt({n1}) = {result}"
+            result = square_root(number1)
+            op_str = f"sqrt({number1}) = {result}"
             print(f"✅ Result: {result}")
             save_to_history(op_str)
         else:
             print("❌ Invalid choice! Please select a number between 1 and 8.")
 
 if __name__ == "__main__":
-    main()
+    main()  
