@@ -35,6 +35,3 @@ def modulus(a, b):
         return a % b
     except Exception as e:
         return str(e) 
-
-def square_root(a):
-    """Calculate the square root of a number."""
