@@ -1,21 +1,14 @@
-"""
-operations.py - Mathematical operations module for the calculator app.
-"""
 
 def add(a, b):
-    """Add two numbers."""
     return a + b
 
 def subtract(a, b):
-    """Subtract two numbers."""
     return a - b
 
 def multiply(a, b):
-    """Multiply two numbers."""
     return a * b
 
 def divide(a, b):
-    """Divide two numbers with division-by-zero error handling."""
     try:
         if b == 0:
             raise ValueError("Error: Division by zero is not allowed!")
@@ -24,11 +17,9 @@ def divide(a, b):
         return str(e)
 
 def power(a, b):
-    """Raise base 'a' to the power of 'b'."""
     return a ** b
 
 def modulus(a, b):
-    """Return the remainder of division."""
     try:
         if b == 0:
             raise ValueError("Error: Modulus by zero is not allowed!")
@@ -37,7 +28,6 @@ def modulus(a, b):
         return str(e) 
 
 def square_root(a):
-    """Calculate the square root of a number."""
     try:
         if a < 0:
             raise ValueError("Error: Square root of a negative number is undefined!")
