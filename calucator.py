@@ -1,6 +1,3 @@
-"""
-calculator.py - Main command-line interface (CLI) for the calculator app.
-"""
 import sys
 from operations import add, subtract, multiply, divide, power, modulus, square_root
 
@@ -21,7 +18,6 @@ def print_menu():
         print("=" * 40)
 
 def save_to_history(text):
-    """Save operation history to a log file (great for testing .gitignore & conflicts)."""
     try:
         with open("history.txt", "a", encoding="utf-8") as f:
             f.write(text + "\n")
