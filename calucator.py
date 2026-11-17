@@ -25,14 +25,14 @@ def save_to_history(text):
         pass
 
 def main():
-    print("Welcome to the Git Workshop Calculator!")
+    print("Welcome!")
     
     while True:
         print_menu()
         choice = input("Please select an option (1-8): ").strip()
 
         if choice == '8':
-            print("Exiting application. Have a great day!")
+            print("Bye. Have a great day!")
             sys.exit()
 
         if choice in ['1', '2', '3', '4', '5', '6']:
