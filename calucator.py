@@ -5,18 +5,20 @@ import sys
 from operations import add, subtract, multiply, divide, power, modulus, square_root
 
 def print_menu():
-    print("\n" + "=" * 40)
-    print("       🧮 Advanced Python Calculator")
-    print("=" * 40)
-    print("1. Addition (+)")
-    print("2. Subtraction (-)")
-    print("3. Multiplication (*)")
-    print("4. Division (/)")
-    print("5. Power (^)")
-    print("6. Modulus (%)")
-    print("7. Square Root (√)")
-    print("8. Exit")
-    print("=" * 40)
+    entry = input("Hi! press any key to use magical calucator")
+    if entry != " ":
+        print("\n" + "=" * 40)
+        print("       🧮 Advanced Python Calculator")
+        print("=" * 40)
+        print("1. Addition (+)")
+        print("2. Subtraction (-)")
+        print("3. Multiplication (*)")
+        print("4. Division (/)")
+        print("5. Power (^)")
+        print("6. Modulus (%)")
+        print("7. Square Root (√)")
+        print("8. Exit")
+        print("=" * 40)
 
 def save_to_history(text):
     """Save operation history to a log file (great for testing .gitignore & conflicts)."""
