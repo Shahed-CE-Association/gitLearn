@@ -2,7 +2,7 @@ import sys
 from operations import add, subtract, multiply, divide, power, modulus, square_root
 
 def print_menu():
-    entry = input("Hi! press any key to use magical calucator")
+    entry = input("press any key to use magical calucator")
     if entry != " ":
         print("\n" + "=" * 40)
         print("       🧮 Advanced Python Calculator")
