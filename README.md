@@ -22,7 +22,7 @@
 
 [جلسه اول](https://www.aparat.com/v/srf2aeg)
 
-[جلسه دوم](https://www.aparat.com/v/srf2aeg)
+[جلسه دوم](https://www.aparat.com/v/nggwxc6?playlist=28384841)
 
 
 ### ترتیب استفاده از مطالب کارگاه:
